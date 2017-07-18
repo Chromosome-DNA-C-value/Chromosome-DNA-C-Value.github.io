@@ -44,6 +44,47 @@ function load_ref() {
     }
 }
 </script>
+
+
+<script>
+function load_pagesp() {
+    var selected_page = document.getElementById("selected_page0").value;
+    if (selected_page != "Choose an Option") {
+        selected_page = "SP Data/" + selected_page + ".html"
+        window.open(selected_page)
+
+       // window.location.href = selected_page
+        //Please note that the value recived,
+        //in this case selected_page,
+        //should be a valid url!
+        //Therefore the value of the
+        //<option> tag should be itself 
+        //a url !
+        //ex.: <option value="page.php"> is valid
+        //<option value="page_1"> is not valid
+    }
+}
+</script>
+
+
+<script>
+function load_refsp() {
+    var selected_page = document.getElementById("selected_page0").value;
+    if (selected_page != "Choose an Option") {
+       selected_page = "Ref Data/" + selected_page.slice(0,7) + ".html"
+        window.open(selected_page)
+        //Please note that the value recived,
+        //in this case selected_page,
+        //should be a valid url!
+        //Therefore the value of the
+        //<option> tag should be itself 
+        //a url !
+        //ex.: <option value="page.php"> is valid
+        //<option value="page_1"> is not valid
+    }
+}
+</script>
+
 <body bgcolor="#C0C0C0">
 
 
@@ -63,7 +104,7 @@ function load_ref() {
 	<p><font size="5"><b>&nbsp;&nbsp;&nbsp; <a href="Overview.html">Overview</a></b></font></p>
 	<p><font size="5"><b>&nbsp;&nbsp;&nbsp; <a href="Team.html">Team</a></b></font></p>
 </form>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <b><font size="4">Genus: </font>&nbsp;</b><select id="selected_page" name="D1">
         <option>Choose an Option</option>
                 <option value="076.001">Actinorhytis</option>
@@ -95,6 +136,187 @@ function load_ref() {
     <button onclick="load_ref()" style="width: 97; height: 31"><b>References</b> </button>
 
 </p>
+
+
+
+
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</b></p>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font size="4">Species: </font></b><select id="selected_page0" name="D2">
+        <option>Choose an Option</option>
+                <option value="076.001.001">Actinorhytis calapparia (Blume) H. Wendl. & Drude ex Scheff.</option>
+<option value="030.001.001">Alisma gramineum Lej.</option>
+<option value="030.001.002">Alisma lanceolatum With.</option>
+<option value="030.001.003">Alisma plantago-aquatica L.</option>
+<option value="030.001.004">Alisma plantago-aquatica subsp. orientale (Sam.) Sam</option>
+<option value="377.001.001">Andrographis affinis Nees</option>
+<option value="377.001.002">Andrographis alata (Vahl) Nees</option>
+<option value="377.001.003">Andrographis atropurpurea (Dennst.) Alston</option>
+<option value="377.001.004">Andrographis beddomei C. B. Clarke</option>
+<option value="377.001.005">Andrographis ceylanica Nees</option>
+<option value="377.001.006">Andrographis chendurunii E.S.S.Kumar, A.E.S.Khan & S.G.Gopal</option>
+<option value="377.001.007">Andrographis echioides (L.) Nees</option>
+<option value="377.001.008">Andrographis elongata (Vahl) T. Anderson</option>
+<option value="377.001.009">Andrographis explicata (C.B. Clarke) Gamble</option>
+<option value="377.001.010">Andrographis glandulosa Nees</option>
+<option value="377.001.011">Andrographis lawsonii Gamble</option>
+<option value="377.001.012">Andrographis laxiflora (Blume) Lindau</option>
+<option value="377.001.013">Andrographis lineata Nees</option>
+<option value="377.001.014">Andrographis lineata var. lawii C.B.Clarke</option>
+<option value="377.001.016">Andrographis lobelioides var. composita C. B. Clarke</option>
+<option value="377.001.015">Andrographis lobelioides Wight.</option>
+<option value="377.001.017">Andrographis longipedunculata (Sreem.) L. H. Cramer</option>
+<option value="377.001.018">Andrographis nallamalayana J. L. Ellis</option>
+<option value="377.001.019">Andrographis neesiana Wight</option>
+<option value="377.001.020">Andrographis ovata Benth. & Hook. f.</option>
+<option value="377.001.021">Andrographis paniculata (Burn. f.) Wall.ex. Nees</option>
+<option value="377.001.022">Andrographis producta (C.B. Clarke) Gamble</option>
+<option value="377.001.023">Andrographis rothii C. B. Clarke</option>
+<option value="377.001.024">Andrographis rotundifolia (Sreem.) Sreem.</option>
+<option value="377.001.025">Andrographis serpyllifolia (Rottler ex.Vahl) Wight</option>
+<option value="377.001.026">Andrographis stellulata C. B. Clarke</option>
+<option value="377.001.027">Andrographis stenophylla C.B. Clarke</option>
+<option value="377.001.028">Andrographis viscosula Nees</option>
+<option value="140.001.013">Arachis batizocoi Krapov. & W.C. Greg.</option>
+<option value="140.001.016">Arachis benensis Krapov., W.C.Greg. &C.E.Simpson</option>
+<option value="140.001.017">Arachis cardenasii Krapov. & W.C. Greg.</option>
+<option value="140.001.018">Arachis correntina (Burkart) Krapov. &W.C.Greg.</option>
+<option value="140.001.032">Arachis cruziana Krapov., W.C. Gregory & C.E. Simpson</option>
+<option value="140.001.031">Arachis decora Krapov., W.C. Gregory &Valls</option>
+<option value="140.001.019">Arachis diogoi Hoehne</option>
+<option value="140.001.014">Arachis duranensis Krapov. & W.C. Greg.</option>
+<option value="140.001.033">Arachis glandulifera Stalker.</option>
+<option value="140.001.034">Arachis gregoryi C.E. Simpson, Krapov. & Valls</option>
+<option value="140.001.020">Arachis helodes Mart. ex Krapov. & Rigoni</option>
+<option value="140.001.035">Arachis herzogii Krapov., W.C. Greg. & C.E. Simpson</option>
+<option value="140.001.025">Arachis hoehnei Krapov. &W.C. Greg.</option>
+<option value="140.001.001">Arachis hypogaea L.</option>
+<option value="140.001.011">Arachis hypogaea subsp. fastigiata var. peruviana Krapov.& W.C. Gregory</option>
+<option value="140.001.002">Arachis hypogaea subsp. hypogaea</option>
+<option value="140.001.004">Arachis hypogaea subsp. hypogaea var.hirsuta J.Kohler</option>
+<option value="140.001.003">Arachis hypogaea subsp. hypogaea var.hypogaea</option>
+<option value="140.001.010">Arachis hypogaea subsp.fastigiata var.aequatoriana Krapov. & W.C. Gregory</option>
+<option value="140.001.008">Arachis hypogaea subsp.fastigiata var.fastigiata Krapov. & W. C. Greg.</option>
+<option value="140.001.009">Arachis hypogaea subsp.fastigiata var.vulgaris C. Harz</option>
+<option value="140.001.007">Arachis hypogaea subsp.fastigiata Waldron.</option>
+<option value="140.001.006">Arachis hypogaea subsp.hypogaea var. bunch</option>
+<option value="140.001.005">Arachis hypogaea subsp.hypogaea var. runner</option>
+<option value="140.001.015">Arachis ipaensis Krapov. & W.C. Greg.</option>
+<option value="140.001.036">Arachis kempff-mercadoi Krapov. & W.C. Greg.</option>
+<option value="140.001.037">Arachis krapovickasii C.E. Simpson, D. E. Williams,Valls& I.G. Vargas.</option>
+<option value="140.001.021">Arachis kuhlmannii Krapov. & W.C. Greg.</option>
+<option value="140.001.026">Arachis linearifolia Valls,Krapov. & C.E. Simpson.</option>
+<option value="140.001.027">Arachis magna Krapov.,W.C. Greg. & C.E.  Simpson.</option>
+<option value="140.001.028">Arachis microsperma Krapov ., W.C. Gregory &Valls.</option>
+<option value="140.001.012">Arachis monticola Krapov. & Rigoni</option>
+<option value="140.001.029">Arachis palustris Krapov.,W. C. Gregory &Valls</option>
+<option value="140.001.030">Arachis praecox Krapov., W.C. Gregory &Valls</option>
+<option value="140.001.038">Arachis schininii Krapov., Valls & C.E.Simpson</option>
+<option value="140.001.039">Arachis simpsonii Krapov. & W.C. Gregory</option>
+<option value="140.001.022">Arachis stenosperma Krapov. & W.C. Greg.</option>
+<option value="140.001.040">Arachis trinitensis Krapov. & W.C.Greg.</option>
+<option value="140.001.023">Arachis valida Krapov. & W.C. Gregory</option>
+<option value="140.001.024">Arachis villosa Benth.</option>
+<option value="140.001.041">Arachis williamsii Krapov. &W.C. Greg.</option>
+<option value="076.002.001">Areca catechu L.</option>
+<option value="076.002.002">Areca triandra Roxb. ex Buch.-Ham.</option>
+<option value="076.003.003">Arenga obtusifolia  Mart.</option>
+<option value="076.003.001">Arenga pinnata (Wurmb) Merr.</option>
+<option value="076.003.002">Arenga wightii Griff.</option>
+<option value="076.004.001">Bentinckia condapanna Berry ex Roxb.</option>
+<option value="076.004.002">Bentinckia nicobarica (Kurz) Becc.</option>
+<option value="076.005.001">Borassus flabellifer L.</option>
+<option value="030.002.001">Caldesia  grandis Sam.</option>
+<option value="030.002.002">Caldesia oligococca (F. Muell.) Buchanan</option>
+<option value="030.002.003">Caldesia oligococca var. echinata Hartog</option>
+<option value="030.002.004">Caldesia parnassifolia (Bassi ex L.) Parl.</option>
+<option value="076.006.001">Caryota mitis Lour.</option>
+<option value="076.006.002">Caryota obtusa Griff.</option>
+<option value="076.006.003">Caryota urens L.</option>
+<option value="076.007.001">Cocos nucifera L.</option>
+<option value="078.001.001">Commelina albescens Hassk.</option>
+<option value="078.001.002">Commelina attenuate Vahl</option>
+<option value="078.001.003">Commelina benghalensis L.</option>
+<option value="078.001.004">Commelina caroliniana Walter.</option>
+<option value="078.001.005">Commelina clavata C.B.Clarke</option>
+<option value="078.001.006">Commelina diffusa Burm.f.</option>
+<option value="078.001.007">Commelina ensifolia R.Br.</option>
+<option value="078.001.008">Commelina erecta L.</option>
+<option value="078.001.009">Commelina forskalaei Vahl</option>
+<option value="078.001.010">Commelina imberbis Ehrenb.exHassk.</option>
+<option value="078.001.011">Commelina indehiscens E. Barnes</option>
+<option value="078.001.012">Commelina longifolia Lam.</option>
+<option value="078.001.013">Commelina maculata Edgew.</option>
+<option value="078.001.014">Commelina paleata Hassk.</option>
+<option value="078.001.015">Commelina sikkimensis C. B. Clarke</option>
+<option value="078.001.016">Commelina subulata Roth.</option>
+<option value="078.001.017">Commelina suffruticosa Blume</option>
+<option value="078.001.018">Commelina wightii Raizada</option>
+<option value="076.008.001">Corypha taliera</option>
+<option value="076.008.002">Corypha umbraculifera L.</option>
+<option value="076.008.003">Corypha utan Lam.</option>
+<option value="076.009.001">Daemonorops jenkinsianus (Griff.) Mart.</option>
+<option value="076.009.002">Daemonorops kurziana Hook. F. ex Becc.</option>
+<option value="076.009.003">Daemonorops manii Becc.</option>
+<option value="076.010.001">Didymosperma gracilis Hook.f.</option>
+<option value="074.001.007">Drimia congesta Bullock</option>
+<option value="074.001.009">Drimia coromandeliana (Roxb.) Lekhak & P. B. Yadav</option>
+<option value="074.001.008">Drimia govindappae (Boraiah & Fatima) Lekhak & P. B. Yadav</option>
+<option value="074.001.001">Drimia indica (Roxb.) Jessop</option>
+<option value="074.001.004">Drimia nagarjunae (Hemadri & Swahari) Anand Kumar</option>
+<option value="074.001.002">Drimia polyantha (Blatt. & McCann) Stearn</option>
+<option value="074.001.005">Drimia polyphylla (Hook.f.) Ansari & Sundararagh.</option>
+<option value="074.001.010">Drimia raogibikei (Hemadri) Hemadri</option>
+<option value="074.001.003">Drimia razii Ansari</option>
+<option value="074.001.006">Drimia wightii Lakshmin.</option>
+<option value="030.003.001">Limnophyton obtusifolium (L.) Miq</option>
+<option value="073.001.001">Pancratium biflorum Roxb.</option>
+<option value="073.001.002">Pancratium longiflorum Buch.-Ham. ex Roxb.</option>
+<option value="073.001.008">Pancratium nairii Sasikala & Reema Kumari</option>
+<option value="073.001.003">Pancratium parvum Dalzell</option>
+<option value="073.001.004">Pancratium sanctae-mariae Blatter and Hallberg.</option>
+<option value="073.001.005">Pancratium triflorum Roxb.</option>
+<option value="073.001.006">Pancratium verecundum Aiton</option>
+<option value="073.001.007">Pancratium zeylanicum L.</option>
+<option value="030.004.002">Sagittaria guayanensis Kunth</option>
+<option value="030.004.003">Sagittaria guayanensis subsp. lappula (D. Don) Bogin</option>
+<option value="030.004.004">Sagittaria latifolia Willd.</option>
+<option value="030.004.001">Sagittaria longiloba Engelm. ex J.G.Sm.</option>
+<option value="030.004.006">Sagittaria sagittifolia L.</option>
+<option value="030.004.005">Sagittaria trifolia L.</option>
+<option value="140.002.001">Vigna aconitifolia (Jacq.) Marechal</option>
+<option value="140.002.002">Vigna adenantha (G.Mey.) Marechal, Mascherpa & Stainier</option>
+<option value="140.002.003">Vigna angularis (Willd.) Ohwi&H. Ohashi</option>
+<option value="140.002.008">Vigna caracalla (L.) Verdc.</option>
+<option value="140.002.009">Vigna dalzelliana (Kuntze)Verdc.</option>
+<option value="140.002.010">Vigna glabrescens Marechalet. Al.</option>
+<option value="140.002.011">Vigna hainiana Babu, Gopin. &S.K.Sharma</option>
+<option value="140.002.004">Vigna khandalensis(Santapau) Sundararagh. &Wadhwa</option>
+<option value="140.002.012">Vigna luteola(Jacq.) Benth.</option>
+<option value="140.002.013">Vigna marina (Burm. F) Merr.</option>
+<option value="140.002.014">Vigna mungo (L.) Hepper</option>
+<option value="140.002.015">Vigna pilosa(Willd.) Baker</option>
+<option value="140.002.016">Vigna radiata(L.) R.Wilczek</option>
+<option value="140.002.017">Vigna sahyadriana Aitawade, K. V. Bhat & S. R. Yadav</option>
+<option value="140.002.018">Vigna sublobata(Roxb.) Bairig., Panda, B.P. Choudhury&Patnaik</option>
+<option value="140.002.019">Vigna subramaniana (Babu ex Raizada) M. Sharma</option>
+<option value="140.002.023">Vigna subterranea (L.) Verdc.</option>
+<option value="140.002.020">Vigna trilobata(L.) Verdc.</option>
+<option value="140.002.022">Vigna umbellata (Thunb.) Ohwi & H.Ohashi</option>
+<option value="140.002.006">Vigna unguiculata subsp. Cylindrica (L.) Verdc.</option>
+<option value="140.002.007">Vigna unguiculata subsp. Sesquipedalis (L.)Verdc.</option>
+<option value="140.002.005">Vigna unguiculata(L.) Walp.</option>
+<option value="140.002.021">Vigna vexillata(L.) A. Rich.</option>
+<option value="030.005.001">Wiesneria triandra (Dalzell) Micheli</option>
+        ...
+    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="load_pagesp()" style="width: 67; height: 31"><b>Details</b> </button>
+    &nbsp;&nbsp;&nbsp;
+    <button onclick="load_refsp()" style="width: 97; height: 31"><b>References</b> </button>
+
+</p>
+
 
 
 
